@@ -21,7 +21,3 @@ def kiddo(s):
         final1+=vow(i)
     print(final1)
 
-
-s = input("Enter your string: ")
-print(s)
-kiddo(s)
