@@ -1,12 +1,8 @@
-import string
-import random
- 
-# initializing size of string
-N = 7
- 
-# using random.choices()
-# generating random strings
-res = ''.join(random.choices(string.ascii_letters, k=N))
- 
-# print result
-print("The generated random string : " + str(res))
+import mysql.connector
+mydb=mysql.connector.connect(host="localhost",user="root",password="2005",database="cs_proj")
+myc=mydb.cursor()
+myc.execute("select * from login")
+for i in myc:
+    print(i)
+
+myc.close()
