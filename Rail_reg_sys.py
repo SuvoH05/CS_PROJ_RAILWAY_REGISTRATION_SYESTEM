@@ -31,4 +31,5 @@ mydb=mysql.connector.connect(host="localhost",user="root",password="2005",databa
 rand = "".join(random.choices(string.ascii_letters + string.digits, k=5))
 myc=mydb.cursor()
 
-login(rand,myc)
+#login(rand,myc)
+booking_ticket()

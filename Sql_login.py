@@ -14,8 +14,18 @@ myc.execute("INSERT INTO login VALUES('Mosa69','dengu69')")
 myc.execute("INSERT INTO login VALUES('SuryaFked','fucked24/7')")
 myc.execute("INSERT INTO login VALUES('Kiddo','bhau123')")
 myc.execute("Select * from login")
+sample = input("Enter:")
+sample1 = input("Enter2:")
+s=0
 for i in myc:
     print(i)
+    """if i[0] == sample and i[1] == sample1 :
+        print ("Login Successful")
+    else:
+        print("Invalid login details")
+        break"""
+    
+
 myc.execute("COMMIT")
 myc.close()
 
