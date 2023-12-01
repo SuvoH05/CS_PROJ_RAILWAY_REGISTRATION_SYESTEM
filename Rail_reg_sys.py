@@ -9,7 +9,7 @@ def login(rand,Sql):
     print("captcha: " + str(rand))
     captcha = input("Enter the captcha: ")
     if captcha == rand:
-        Sql.execute("select * from login")
+        Sql.execute("select * from registration")
         for i in Sql:
             if i[0] == username and i[6] == password :
                 print ("Login Successful")
